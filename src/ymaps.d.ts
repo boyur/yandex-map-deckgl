@@ -6,6 +6,7 @@ declare namespace ymaps {
     }
   
     export class Map {
+      [x: string]: any;
       constructor(element: string | any, state: MapState);
     }
   
