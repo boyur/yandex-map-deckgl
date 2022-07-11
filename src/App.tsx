@@ -11,6 +11,11 @@ function App() {
         zoom: 12,
         controls: [],
       });
+      const projection = map.current.options.get('projection');
+
+      map.current.events.add("actiontick", (e: any) => {
+        console.log("actiontick", projection.fromGlobalPixels(e.originalEvent.tick.globalPixelCenter, e.originalEvent.tick.zoom));
+      })
     });
   }, []);
 
