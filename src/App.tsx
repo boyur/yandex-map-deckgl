@@ -9,7 +9,7 @@ function App() {
       map.current = new ymaps.Map("map", {
         center: [55.76, 37.64],
         zoom: 12,
-        controls: []
+        controls: [],
       });
     });
   }, []);
