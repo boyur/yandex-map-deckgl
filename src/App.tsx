@@ -62,6 +62,7 @@ function App() {
       map.current.cursors.push("inherit");
 
       map.current.events.add("actiontick", (e: any) => {
+        console.log("actiontick");
         const center = projection.fromGlobalPixels(e.originalEvent.tick.globalPixelCenter, e.originalEvent.tick.zoom);
         deck.current?.setProps({
           viewState: {
