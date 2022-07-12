@@ -40,7 +40,9 @@ function App() {
           getPosition: d => d.coordinates,
           getRadius: d => Math.sqrt(d.exits),
           getFillColor: d => [255, 140, 0],
-          getLineColor: d => [0, 0, 0]
+          getLineColor: d => [0, 0, 0],
+          autoHighlight: true,
+          highlightColor: [255, 0, 0, 100]
         })
       ]
     });
@@ -52,10 +54,12 @@ function App() {
         zoom: viewport.zoom,
         controls: [],
       }, {
-        maxAnimationZoomDifference: 0
+        maxAnimationZoomDifference: 0,
       });
       
       const projection = map.current.options.get('projection');
+
+      map.current.cursors.push("inherit");
 
       map.current.events.add("actiontick", (e: any) => {
         const center = projection.fromGlobalPixels(e.originalEvent.tick.globalPixelCenter, e.originalEvent.tick.zoom);
@@ -81,7 +85,7 @@ function App() {
 
   return (
     <div className="App">
-      <div ref={deckContainer} style={{ height: "100%" }}>
+      <div ref={deckContainer} style={{ height: "100%", position: "relative" }}>
         <div id="map" className="Map" />
         <canvas
           ref={deckOverlay}
