@@ -52,7 +52,7 @@ function App() {
       map.current = new ymaps.Map("map", {
         center: [viewport.lat, viewport.lng],
         zoom: viewport.zoom,
-        controls: [],
+        controls: ["zoomControl"],
       }, {
         maxAnimationZoomDifference: 0,
       });
