@@ -201,6 +201,13 @@
     "@babel/plugin-syntax-jsx" "^7.18.6"
     "@babel/types" "^7.18.6"
 
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.0", "@babel/runtime@^7.3.1":
+  version "7.18.6"
+  resolved "https://npm.yandex-team.ru/@babel%2fruntime/-/runtime-7.18.6.tgz?rbtorrent=e8ef8384bf522e474f1d1cefc8b4c62dcd81952f#6a1ef59f838debd670421f8c7f2cbb8da9751580"
+  integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.18.6":
   version "7.18.6"
   resolved "https://npm.yandex-team.ru/@babel%2ftemplate/-/template-7.18.6.tgz?rbtorrent=5c1c61ac8e026a30d0a8f50170e51bcec32c7f74#1283f4993e00b929d6e2d3c72fdc9168a2977a31"
@@ -233,6 +240,39 @@
   dependencies:
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
+
+"@deck.gl/core@^8.8.2":
+  version "8.8.2"
+  resolved "https://npm.yandex-team.ru/@deck.gl%2fcore/-/core-8.8.2.tgz?rbtorrent=d62f826bbd5200a1e83b7dab47034031c026ceb2#c8c0e5e4993a27925d3551dcf00a8330bd153ef3"
+  integrity sha512-H1AGujMwcof/A8i3Y0kUaIY71gLrJ13N0tw1Kfrvge5plRbAPka00IfR5Lom7Wz60z4UXlTni+0mIHAH0pbl4Q==
+  dependencies:
+    "@loaders.gl/core" "^3.2.0"
+    "@loaders.gl/images" "^3.2.0"
+    "@luma.gl/constants" "^8.5.14"
+    "@luma.gl/core" "^8.5.14"
+    "@math.gl/core" "^3.6.0"
+    "@math.gl/sun" "^3.6.0"
+    "@math.gl/web-mercator" "^3.6.0"
+    "@probe.gl/env" "^3.5.0"
+    "@probe.gl/log" "^3.5.0"
+    "@probe.gl/stats" "^3.5.0"
+    gl-matrix "^3.0.0"
+    math.gl "^3.6.0"
+    mjolnir.js "^2.7.0"
+
+"@deck.gl/layers@^8.8.2":
+  version "8.8.2"
+  resolved "https://npm.yandex-team.ru/@deck.gl%2flayers/-/layers-8.8.2.tgz?rbtorrent=e8d403a66f80c58464171e09958d7cd9f824261c#abde632432a40592ceea9d5a060b28130d393991"
+  integrity sha512-gmITtCY3/tEOXPOafc6NuGqu7nD+Xa4HRS2N1W54XFxX2j1/l1+uc4veNeJsbFZOm45Z+Zfv77tLveKTSFG/KA==
+  dependencies:
+    "@loaders.gl/images" "^3.2.0"
+    "@loaders.gl/schema" "^3.2.0"
+    "@luma.gl/constants" "^8.5.14"
+    "@mapbox/tiny-sdf" "^1.1.0"
+    "@math.gl/core" "^3.6.0"
+    "@math.gl/polygon" "^3.6.0"
+    "@math.gl/web-mercator" "^3.6.0"
+    earcut "^2.0.6"
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
@@ -274,6 +314,173 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@loaders.gl/core@^3.0.0", "@loaders.gl/core@^3.2.0":
+  version "3.2.4"
+  resolved "https://npm.yandex-team.ru/@loaders.gl%2fcore/-/core-3.2.4.tgz?rbtorrent=346e49fc5d80094fdd754df100df3aced23278a3#5370c38273525f6bbecfd890f7346c5383547344"
+  integrity sha512-SFBw6p8WXUGn8fgpMaGVqTq2nabu5ILJKzr0Q0muN8ESnOpzsdRzI6aXw8Ip8YCerqjklXnuB0Lqeu34odalNw==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@loaders.gl/loader-utils" "3.2.4"
+    "@loaders.gl/worker-utils" "3.2.4"
+    "@probe.gl/log" "^3.5.0"
+    probe.gl "^3.4.0"
+
+"@loaders.gl/images@^3.2.0":
+  version "3.2.4"
+  resolved "https://npm.yandex-team.ru/@loaders.gl%2fimages/-/images-3.2.4.tgz?rbtorrent=a1bd9febb0c3f697752fcfe2017cbc51e29ef005#b5c02ed5c1c64b314640decdd0743bcb46c055bd"
+  integrity sha512-/uG1SLRvr93pZSY39xrwe3fIESMIF5ahLDcPRHXjA+BoQ+KvHAsiZV+6sb+HAMWTThntLfRND6nBan+gofjKQA==
+  dependencies:
+    "@loaders.gl/loader-utils" "3.2.4"
+
+"@loaders.gl/loader-utils@3.2.4":
+  version "3.2.4"
+  resolved "https://npm.yandex-team.ru/@loaders.gl%2floader-utils/-/loader-utils-3.2.4.tgz?rbtorrent=3064a1d84d46895ae2227ad477a3fc10c8d3fc90#9faa7f7d0e6cb59bb634c8fa461fc07703fabedd"
+  integrity sha512-FwWgQztK5l0Gn7UaIq1LzSKo4751XY1SlQGxibczxRbkwfpbgyCn9yAyJy59HxcqZboYzXi+mrVr7yxLTYAIQg==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    "@loaders.gl/worker-utils" "3.2.4"
+    "@probe.gl/stats" "^3.5.0"
+
+"@loaders.gl/schema@^3.2.0":
+  version "3.2.4"
+  resolved "https://npm.yandex-team.ru/@loaders.gl%2fschema/-/schema-3.2.4.tgz?rbtorrent=9888e5535b0e40ed306c34c8a8e4d9a958621d83#30c33aa1124a229a37797c7e4860a7a06328c98d"
+  integrity sha512-zw1tv6BGI7zLk6LSm6DssEx3VP4nKXzp6JzMPdPVwkSQKaWfkhK+7Syuz9kSCzUWJrhq3H5QslMobV8phlQl+Q==
+  dependencies:
+    "@types/geojson" "^7946.0.7"
+    apache-arrow "^4.0.0"
+
+"@loaders.gl/worker-utils@3.2.4":
+  version "3.2.4"
+  resolved "https://npm.yandex-team.ru/@loaders.gl%2fworker-utils/-/worker-utils-3.2.4.tgz?rbtorrent=aec92e2ac797e3e881f3dee4919b79a4f34842f1#6e23ddc601bd10f2a86a38fabf957e1dc79ab6de"
+  integrity sha512-gGy8+LiyoxfahCgldYDCgXAUXsC3eBkVGqLrqU759+1y/sw3S+vJzZ2Vwpt8lB7+0LEaJ7gLNnGD+x2LekvO+A==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+
+"@luma.gl/constants@8.5.14", "@luma.gl/constants@^8.5.14":
+  version "8.5.14"
+  resolved "https://npm.yandex-team.ru/@luma.gl%2fconstants/-/constants-8.5.14.tgz?rbtorrent=50403a3aa0e7052016a487ca8ad9433fc0b39ebe#929e7799ad878af00b30ec0e8ccec2880649dfbb"
+  integrity sha512-GPZlnOpXLnW4fkER/sOSlXEZl+uwovvMlSPpEdofIHdNxG4oOdZlDuLc5K+NAJ9Fm+3AbDfCOihcA6WOsVuT5Q==
+
+"@luma.gl/core@^8.0.0", "@luma.gl/core@^8.5.14":
+  version "8.5.14"
+  resolved "https://npm.yandex-team.ru/@luma.gl%2fcore/-/core-8.5.14.tgz?rbtorrent=54fe11a5ac7c5ef781c8de5d6f11fd89a6168e45#7f728c00b9c92ce647db877bdb6204300c4d9cfc"
+  integrity sha512-YgXxWzBNnoIuo6BTsJdK9tfFBWSzmhqeCGsbGMOVimSRXNMDBXATDL5c/J8pkVSbphjhk5aSOmhUC7C5WzKKYQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@luma.gl/constants" "8.5.14"
+    "@luma.gl/engine" "8.5.14"
+    "@luma.gl/gltools" "8.5.14"
+    "@luma.gl/shadertools" "8.5.14"
+    "@luma.gl/webgl" "8.5.14"
+
+"@luma.gl/engine@8.5.14":
+  version "8.5.14"
+  resolved "https://npm.yandex-team.ru/@luma.gl%2fengine/-/engine-8.5.14.tgz?rbtorrent=9c4839771d9fc2b266a3edbfe4ece79f64fcf1c6#ba0795850765bab37fc849c7c2b9b7e798d1888f"
+  integrity sha512-Dr05gfmHo2Zla0bejxaw+Zhjo1OwzGuUwwzXg/M4TE5U8YyC+mUMtIKcFILfMMEZxhZuWPU6jTDhvfHTIp+3xA==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@luma.gl/constants" "8.5.14"
+    "@luma.gl/gltools" "8.5.14"
+    "@luma.gl/shadertools" "8.5.14"
+    "@luma.gl/webgl" "8.5.14"
+    "@math.gl/core" "^3.5.0"
+    "@probe.gl/env" "^3.5.0"
+    "@types/offscreencanvas" "^2019.7.0"
+    probe.gl "^3.4.0"
+
+"@luma.gl/gltools@8.5.14":
+  version "8.5.14"
+  resolved "https://npm.yandex-team.ru/@luma.gl%2fgltools/-/gltools-8.5.14.tgz?rbtorrent=5a76757a5365bdd551624fea8f90cff16ded6aee#83763226c901d1eaf5d7a2ef4ca4bb5acb30b38a"
+  integrity sha512-ra8fSpkvIdaaBpD/zNryVYgYDRGNhStACIavM5wB5Gp3KVBbvUZWRl8a8YxRnv6MLWvBoEXnX7Dl7NmfWp6FPA==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@luma.gl/constants" "8.5.14"
+    "@probe.gl/env" "^3.5.0"
+    "@types/offscreencanvas" "^2019.7.0"
+    probe.gl "^3.4.0"
+
+"@luma.gl/shadertools@8.5.14":
+  version "8.5.14"
+  resolved "https://npm.yandex-team.ru/@luma.gl%2fshadertools/-/shadertools-8.5.14.tgz?rbtorrent=a9702a7a0a7564b7b7b756730b5061df264987bb#dce11869c4e45744fc6d0326a72f1b1522cdf9ad"
+  integrity sha512-vq0XzMYzGM/A/usNvCzfWJw+ycN2vzqN4AtgrejrOrYu+6yP8LmfRp/iAxjhFkukCPgs03tUFYSlkY7I6HIVtw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@math.gl/core" "^3.5.0"
+
+"@luma.gl/webgl@8.5.14":
+  version "8.5.14"
+  resolved "https://npm.yandex-team.ru/@luma.gl%2fwebgl/-/webgl-8.5.14.tgz?rbtorrent=8a2259fecdbd40d1af63df2d06849ce61ad7f664#f5da7e80e6d4ceb0720648a2c63798ebf78f7ac4"
+  integrity sha512-8FT9bm6k6XktETcL80AxmLGm27xWbQJYWjsHYjB4cP+PdePNnNQXNYrDN0WX7jKLECSgWIcaQ38O7itD9jACCw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@luma.gl/constants" "8.5.14"
+    "@luma.gl/gltools" "8.5.14"
+    "@probe.gl/env" "^3.5.0"
+    probe.gl "^3.4.0"
+
+"@mapbox/tiny-sdf@^1.1.0":
+  version "1.2.5"
+  resolved "https://npm.yandex-team.ru/@mapbox%2ftiny-sdf/-/tiny-sdf-1.2.5.tgz?rbtorrent=d3261a5926cacf64fc14de2f94577c4c7359fdb4#424c620a96442b20402552be70a7f62a8407cc59"
+  integrity sha512-cD8A/zJlm6fdJOk6DqPUV8mcpyJkRz2x2R+/fYcWDYG3oWbG7/L7Yl/WqQ1VZCjnL9OTIMAn6c+BC5Eru4sQEw==
+
+"@math.gl/core@3.6.1", "@math.gl/core@^3.5.0", "@math.gl/core@^3.6.0":
+  version "3.6.1"
+  resolved "https://npm.yandex-team.ru/@math.gl%2fcore/-/core-3.6.1.tgz?rbtorrent=66550a22c3aa86ef17ac995d030c5ad04f14a5d9#1472ba744b91db1ef8fc59e79aef446a70fef22d"
+  integrity sha512-arWJyTIdg9EG2xPze0T569wcWsmMHswh5a194zAO86JmDxhPKe/JUU41s0D9OTipq3obuLz/OVayZJEpDB4qcw==
+  dependencies:
+    "@babel/runtime" "^7.12.0"
+    "@math.gl/types" "3.6.1"
+    gl-matrix "^3.4.0"
+
+"@math.gl/polygon@^3.6.0":
+  version "3.6.1"
+  resolved "https://npm.yandex-team.ru/@math.gl%2fpolygon/-/polygon-3.6.1.tgz?rbtorrent=ee74167cce7bd655f9e244172708bb968b198af5#d09c3231856c237e271e4d3ac5f6394b500a57b6"
+  integrity sha512-DS8Xxo+cadPl1YBWURFWIYGC+baiwezz4zzqAZtEn5li2dnVDbt73uiECdTBdmjXhJUiMxz1VzkF7r7Hcz10TA==
+  dependencies:
+    "@math.gl/core" "3.6.1"
+
+"@math.gl/sun@^3.6.0":
+  version "3.6.1"
+  resolved "https://npm.yandex-team.ru/@math.gl%2fsun/-/sun-3.6.1.tgz?rbtorrent=0d3ded3eda4a3e9a4505a27972296c6833ef74f2#d49a8cfc02e5414af87c3b69686869a954169462"
+  integrity sha512-IWeiUPIsr4ZmZxKUA5uE/PA3i/lZByzWHCGxFBXRJjVxCrHJsWZOxnVtwbPOT7nypSb01O3j6AXVq9RhUMMfzw==
+  dependencies:
+    "@babel/runtime" "^7.12.0"
+
+"@math.gl/types@3.6.1":
+  version "3.6.1"
+  resolved "https://npm.yandex-team.ru/@math.gl%2ftypes/-/types-3.6.1.tgz?rbtorrent=6b326dbd4ec5d9977a093f64caa6f9c358a6fb6d#d4f8f0ca31473866ab71dee10cfa919a9ac827c2"
+  integrity sha512-G2KegmrstjUsLLtm+zj6lfxEB42s6JVDmIY3kU08HOyWHJTgvbZ2Z1MsB6z8TeKfX1QH8M/2WlemRwUS+3cj8w==
+
+"@math.gl/web-mercator@^3.6.0":
+  version "3.6.1"
+  resolved "https://npm.yandex-team.ru/@math.gl%2fweb-mercator/-/web-mercator-3.6.1.tgz?rbtorrent=983b24294082bf5f47f11010b515b904a827c355#f6a62bb92167a7b0ae9017d5a2ba5eb866cd3850"
+  integrity sha512-nB/sJYAZpjWOpdQ9IMWXcAITM57huILBdEWzfumqgZ0ay49I4Y0yaFgkjgd/52gfwpY8TDoaR8eRxIQ7c1tx7Q==
+  dependencies:
+    "@babel/runtime" "^7.12.0"
+    gl-matrix "^3.4.0"
+
+"@probe.gl/env@3.5.0", "@probe.gl/env@^3.5.0":
+  version "3.5.0"
+  resolved "https://npm.yandex-team.ru/@probe.gl%2fenv/-/env-3.5.0.tgz?rbtorrent=461087d950329c96690cf738163fe6ecfb4a5bd3#c6d8fbf414fda3eba7b3813cc274e76245216fe0"
+  integrity sha512-YdlpZZshhyYxvWDBmZ5RIW2pTR14Pw4p9czMlt/v7F6HbFzWfAdmH7q6xVwFRYxUpQLwhWensWyv4aFysiWl4g==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
+"@probe.gl/log@3.5.0", "@probe.gl/log@^3.5.0":
+  version "3.5.0"
+  resolved "https://npm.yandex-team.ru/@probe.gl%2flog/-/log-3.5.0.tgz?rbtorrent=e224b3125857fcda2b3d6fe5877dce9ce77f312b#6589822ab771eadf77787ffc6ecf73e59d181c64"
+  integrity sha512-nW/qz2X1xY08WU/TsmJP6/6IPNcaY5fS/vLjpC4ahJuE2Mezga4hGM/R2X5JWE/nkPc+BsC5GnAnD13rwAxS7g==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@probe.gl/env" "3.5.0"
+
+"@probe.gl/stats@3.5.0", "@probe.gl/stats@^3.5.0":
+  version "3.5.0"
+  resolved "https://npm.yandex-team.ru/@probe.gl%2fstats/-/stats-3.5.0.tgz?rbtorrent=1a8995046cc607acaddda7ba2ddf0bb344fcca7c#774495772f06e898aae28c1d315c9edac07f3425"
+  integrity sha512-IH2M+F3c8HR1DTroBARePUFG7wIewumtKA0UFqx51Z7S4hKrD60wFbpMmg0AcF4FvHAXMBoC+kYi1UKW9XbAOw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
   resolved "https://npm.yandex-team.ru/@rollup%2fpluginutils/-/pluginutils-4.2.1.tgz?rbtorrent=623cf70cb7855fa7ab2a0f183c631919c650a61c#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
@@ -281,6 +488,31 @@
   dependencies:
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
+
+"@types/flatbuffers@^1.10.0":
+  version "1.10.0"
+  resolved "https://npm.yandex-team.ru/@types%2fflatbuffers/-/flatbuffers-1.10.0.tgz?rbtorrent=876cbf17077250f75f7f86429810135404fc6da3#aa74e30ffdc86445f2f060e1808fc9d56b5603ba"
+  integrity sha512-7btbphLrKvo5yl/5CC2OCxUSMx1wV1wvGT1qDXkSt7yi00/YW7E8k6qzXqJHsp+WU0eoG7r6MTQQXI9lIvd0qA==
+
+"@types/geojson@^7946.0.7":
+  version "7946.0.8"
+  resolved "https://npm.yandex-team.ru/@types%2fgeojson/-/geojson-7946.0.8.tgz?rbtorrent=b27be03e17e07b8a80be4fe3c6bccf4ef1042520#30744afdb385e2945e22f3b033f897f76b1f12ca"
+  integrity sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA==
+
+"@types/hammerjs@^2.0.41":
+  version "2.0.41"
+  resolved "https://npm.yandex-team.ru/@types%2fhammerjs/-/hammerjs-2.0.41.tgz?rbtorrent=3efbf3009cc91037e2192ca9ecde61f15c3110b8#f6ecf57d1b12d2befcce00e928a6a097c22980aa"
+  integrity sha512-ewXv/ceBaJprikMcxCmWU1FKyMAQ2X7a9Gtmzw8fcg2kIePI1crERDM818W+XYrxqdBBOdlf2rm137bU+BltCA==
+
+"@types/node@^14.14.37":
+  version "14.18.21"
+  resolved "https://npm.yandex-team.ru/@types%2fnode/-/node-14.18.21.tgz?rbtorrent=0299bfae3a606c242da7c3b1e1651a07c2d7a133#0155ee46f6be28b2ff0342ca1a9b9fd4468bef41"
+  integrity sha512-x5W9s+8P4XteaxT/jKF0PSb7XEvo5VmqEWgsMlyeY4ZlLK8I6aH6g5TPPyDlLAep+GYf4kefb7HFyc7PAO3m+Q==
+
+"@types/offscreencanvas@^2019.7.0":
+  version "2019.7.0"
+  resolved "https://npm.yandex-team.ru/@types%2foffscreencanvas/-/offscreencanvas-2019.7.0.tgz?rbtorrent=29d559254cc7f31db4be2ae069905ed45121a585#e4a932069db47bb3eabeb0b305502d01586fa90d"
+  integrity sha512-PGcyveRIpL1XIqK8eBsmRBt76eFgtzuPiSTyKHZxnGemp2yzGzWpjYKAfK3wIMiU7eH+851yEpiuP8JZerTmWg==
 
 "@types/prop-types@*":
   version "15.7.5"
@@ -308,6 +540,11 @@
   resolved "https://npm.yandex-team.ru/@types%2fscheduler/-/scheduler-0.16.2.tgz?rbtorrent=e421e1eb045a9d9c734e7bdeccb712473717a8fb#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+"@types/text-encoding-utf-8@^1.0.1":
+  version "1.0.2"
+  resolved "https://npm.yandex-team.ru/@types%2ftext-encoding-utf-8/-/text-encoding-utf-8-1.0.2.tgz?rbtorrent=12c0cdbc3301f3a5ec0fe1c80cc3f7e9dfbe8fa0#896e94ce99b653e886a9b925e9dc12c92af7b1ae"
+  integrity sha512-AQ6zewa0ucLJvtUi5HsErbOFKAcQfRLt9zFLlUOvcXBy2G36a+ZDpCHSGdzJVUD8aNURtIjh9aSjCStNMRCcRQ==
+
 "@vitejs/plugin-react@^1.3.0":
   version "1.3.2"
   resolved "https://npm.yandex-team.ru/@vitejs%2fplugin-react/-/plugin-react-1.3.2.tgz?rbtorrent=67376cea5a23be567df82f524e8d957c23f48c4e#2fcf0b6ce9bcdcd4cec5c760c199779d5657ece1"
@@ -329,6 +566,32 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+apache-arrow@^4.0.0:
+  version "4.0.1"
+  resolved "https://npm.yandex-team.ru/apache-arrow/-/apache-arrow-4.0.1.tgz?rbtorrent=2c18b60a9d9b10a72a7a5701cb79b9a93de0414f#62e58caa46a6a41966478a19c492380c9efb1d66"
+  integrity sha512-DyF7GXCbSjsw4P5C8b+qW7OnJKa6w9mJI0mhV0+EfZbVZCmhfiF6ffqcnrI/kzBrRqn9hH/Ft9n5+m4DTbBJpg==
+  dependencies:
+    "@types/flatbuffers" "^1.10.0"
+    "@types/node" "^14.14.37"
+    "@types/text-encoding-utf-8" "^1.0.1"
+    command-line-args "5.1.1"
+    command-line-usage "6.1.1"
+    flatbuffers "1.12.0"
+    json-bignum "^0.0.3"
+    pad-left "^2.1.0"
+    text-encoding-utf-8 "^1.0.2"
+    tslib "^2.2.0"
+
+array-back@^3.0.1:
+  version "3.1.0"
+  resolved "https://npm.yandex-team.ru/array-back/-/array-back-3.1.0.tgz?rbtorrent=11db48be06b3a65fe2e6e504e12b6a2d31b7db6b#b8859d7a508871c9a7b2cf42f99428f65e96bfb0"
+  integrity sha512-TkuxA4UCOvxuDK6NZYXCalszEzj+TLszyASooky+i742l9TqsOdYCMJJupxRic61hwquNtppB3hgcuq9SVSH1Q==
+
+array-back@^4.0.1:
+  version "4.0.2"
+  resolved "https://npm.yandex-team.ru/array-back/-/array-back-4.0.2.tgz?rbtorrent=eb78988db38ed54434d1168a3909e65811be403a#8004e999a6274586beeb27342168652fdb89fa1e"
+  integrity sha512-NbdMezxqf94cnNfWLL7V/im0Ub+Anbb0IoZhvzie8+4HJ4nMQuzHuy49FkGYCJK2yAloZ3meiB6AVMClbrI1vg==
+
 browserslist@^4.20.2:
   version "4.21.1"
   resolved "https://npm.yandex-team.ru/browserslist/-/browserslist-4.21.1.tgz?rbtorrent=343096ebe42748d66fc296f7e59f617aafac008d#c9b9b0a54c7607e8dc3e01a0d311727188011a00"
@@ -344,7 +607,7 @@ caniuse-lite@^1.0.30001359:
   resolved "https://npm.yandex-team.ru/caniuse-lite/-/caniuse-lite-1.0.30001363.tgz?rbtorrent=8572a872a3bdd5c33e520149f3d2e9a4c61c524b#26bec2d606924ba318235944e1193304ea7c4f15"
   integrity sha512-HpQhpzTGGPVMnCjIomjt+jvyUu8vNFo3TaDiZ/RcoTrlOq/5+tC8zHdsbgFB6MxmaY+jCpsH09aD80Bb4Ow3Sg==
 
-chalk@^2.0.0:
+chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://npm.yandex-team.ru/chalk/-/chalk-2.4.2.tgz?rbtorrent=06c5f4d36a66ba5a0ae97b1b80e9b65e0c6f6ef9#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -365,6 +628,26 @@ color-name@1.1.3:
   resolved "https://npm.yandex-team.ru/color-name/-/color-name-1.1.3.tgz?rbtorrent=dae93194b306ff22bc57ca1c62c6a5c14d2c1e91#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
+command-line-args@5.1.1:
+  version "5.1.1"
+  resolved "https://npm.yandex-team.ru/command-line-args/-/command-line-args-5.1.1.tgz?rbtorrent=b785367184d63112ae8f49ada4ea4256331a2daf#88e793e5bb3ceb30754a86863f0401ac92fd369a"
+  integrity sha512-hL/eG8lrll1Qy1ezvkant+trihbGnaKaeEjj6Scyr3DN+RC7iQ5Rz84IeLERfAWDGo0HBSNAakczwgCilDXnWg==
+  dependencies:
+    array-back "^3.0.1"
+    find-replace "^3.0.0"
+    lodash.camelcase "^4.3.0"
+    typical "^4.0.0"
+
+command-line-usage@6.1.1:
+  version "6.1.1"
+  resolved "https://npm.yandex-team.ru/command-line-usage/-/command-line-usage-6.1.1.tgz?rbtorrent=98f93dc4f9439b7daba642a9cbf2ae6f679e85fa#c908e28686108917758a49f45efb4f02f76bc03f"
+  integrity sha512-F59pEuAR9o1SF/bD0dQBDluhpT4jJQNWUHEuVBqpDmCUo6gPjCi+m9fCWnWZVR/oG6cMTUms4h+3NPl74wGXvA==
+  dependencies:
+    array-back "^4.0.1"
+    chalk "^2.4.2"
+    table-layout "^1.0.1"
+    typical "^5.2.0"
+
 convert-source-map@^1.7.0:
   version "1.8.0"
   resolved "https://npm.yandex-team.ru/convert-source-map/-/convert-source-map-1.8.0.tgz?rbtorrent=87bd336d2b2494059165b281a34ba21984c983ba#f3373c32d21b4d780dd8004514684fb791ca4369"
@@ -383,6 +666,16 @@ debug@^4.1.0:
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
+
+deep-extend@~0.6.0:
+  version "0.6.0"
+  resolved "https://npm.yandex-team.ru/deep-extend/-/deep-extend-0.6.0.tgz?rbtorrent=ef6dac683cfd6fead38ad663236e66b23f1b66f3#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
+  integrity sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
+
+earcut@^2.0.6:
+  version "2.2.3"
+  resolved "https://npm.yandex-team.ru/earcut/-/earcut-2.2.3.tgz?rbtorrent=7dfc0ac0293575574b1a5f2fbefe8fa4bf185706#d44ced2ff5a18859568e327dd9c7d46b16f55cf4"
+  integrity sha512-iRDI1QeCQIhMCZk48DRDMVgQSSBDmbzzNhnxIo+pwx3swkfjMh6vh0nWLq1NdvGHLKH6wIrAM3vQWeTj6qeoug==
 
 electron-to-chromium@^1.4.172:
   version "1.4.177"
@@ -530,6 +823,18 @@ estree-walker@^2.0.1:
   resolved "https://npm.yandex-team.ru/estree-walker/-/estree-walker-2.0.2.tgz?rbtorrent=9993223883a26b491eccce4bec5dcb312eb1dd5f#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
+find-replace@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.yandex-team.ru/find-replace/-/find-replace-3.0.0.tgz?rbtorrent=3fca18049c9216abb47d4f39ecdb2199b6030bc9#3e7e23d3b05167a76f770c9fbd5258b0def68c38"
+  integrity sha512-6Tb2myMioCAgv5kfvP5/PkZZ/ntTpVK39fHY7WkWBgvbeE+VHd/tZuZ4mrC+bxh4cfOZeYKVPaJIZtZXV7GNCQ==
+  dependencies:
+    array-back "^3.0.1"
+
+flatbuffers@1.12.0:
+  version "1.12.0"
+  resolved "https://npm.yandex-team.ru/flatbuffers/-/flatbuffers-1.12.0.tgz?rbtorrent=a828d0d03f90161a1f4eed1badeede4e071e1a85#72e87d1726cb1b216e839ef02658aa87dcef68aa"
+  integrity sha512-c7CZADjRcl6j0PlvFy0ZqXQ67qSEZfrVPynmnL+2zPc+NtMvrF8Y0QceMo7QqnSPc7+uWjUIAbvCQ5WIKlMVdQ==
+
 fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://npm.yandex-team.ru/fsevents/-/fsevents-2.3.2.tgz?rbtorrent=de417e8b4664cffa251a5a9e86d13603edba2eb4#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
@@ -545,10 +850,20 @@ gensync@^1.0.0-beta.2:
   resolved "https://npm.yandex-team.ru/gensync/-/gensync-1.0.0-beta.2.tgz?rbtorrent=8dce4b99eb0ee812d609b35c626a12ba3e46d821#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
   integrity sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==
 
+gl-matrix@^3.0.0, gl-matrix@^3.4.0:
+  version "3.4.3"
+  resolved "https://npm.yandex-team.ru/gl-matrix/-/gl-matrix-3.4.3.tgz?rbtorrent=02048a8acf1b862cd04b31d2a0a48cad1c82561c#fc1191e8320009fd4d20e9339595c6041ddc22c9"
+  integrity sha512-wcCp8vu8FT22BnvKVPjXa/ICBWRq/zjFfdofZy1WSpQZpphblv12/bOQLBC1rMM7SGOFS9ltVmKOHil5+Ml7gA==
+
 globals@^11.1.0:
   version "11.12.0"
   resolved "https://npm.yandex-team.ru/globals/-/globals-11.12.0.tgz?rbtorrent=558ffec8d36b92a3b7d7ebc2db36b782aefd1694#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
+
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://npm.yandex-team.ru/hammerjs/-/hammerjs-2.0.8.tgz?rbtorrent=f06ad9a7f03844967ced195e3c7ba26b76e6c673#04ef77862cff2bb79d30f7692095930222bf60f1"
+  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -579,10 +894,20 @@ jsesc@^2.5.1:
   resolved "https://npm.yandex-team.ru/jsesc/-/jsesc-2.5.2.tgz?rbtorrent=934123552464c7d9fc89c47d831303d2699c21aa#80564d2e483dacf6e8ef209650a67df3f0c283a4"
   integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
 
+json-bignum@^0.0.3:
+  version "0.0.3"
+  resolved "https://npm.yandex-team.ru/json-bignum/-/json-bignum-0.0.3.tgz?rbtorrent=b5aeb6af8a6a8c0af4c53f81ca4fef3997b77335#41163b50436c773d82424dbc20ed70db7604b8d7"
+  integrity sha1-QRY7UENsdz2CQk28IO1w23YEuNc=
+
 json5@^2.2.1:
   version "2.2.1"
   resolved "https://npm.yandex-team.ru/json5/-/json5-2.2.1.tgz?rbtorrent=2e25206af55a889255e768878f4d913860786d9b#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
   integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
+
+lodash.camelcase@^4.3.0:
+  version "4.3.0"
+  resolved "https://npm.yandex-team.ru/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz?rbtorrent=adc808ef31018902469ca1a8c73a21b3b5a6dda9#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
 loose-envify@^1.1.0:
   version "1.4.0"
@@ -590,6 +915,21 @@ loose-envify@^1.1.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
+
+math.gl@^3.6.0:
+  version "3.6.1"
+  resolved "https://npm.yandex-team.ru/math.gl/-/math.gl-3.6.1.tgz?rbtorrent=2cba4347b9fcc743bdc12e34c66c63349ac25815#14eb614b70ee152ef93a9b84115fccde5aea9359"
+  integrity sha512-dIAc4VPZ0zsJBJpP8W+Eha2/HQMZSOfEZXuNF4fFVE/8FshTyj0NkzNPtegteRmZGf/sROpzH2d5G3m+PRFrbw==
+  dependencies:
+    "@math.gl/core" "3.6.1"
+
+mjolnir.js@^2.7.0:
+  version "2.7.0"
+  resolved "https://npm.yandex-team.ru/mjolnir.js/-/mjolnir.js-2.7.0.tgz?rbtorrent=884e7459ec6da1ef3b7fd64193ad8dddd5b2a144#8aeec755644d8e9de4f247a5fd0718e39795fe6e"
+  integrity sha512-XlK5OZ7d09eAIdYr+5VKOArYtkWB/f306s34yVij4pBk5wnaKxSrD7fVfP8/BL27nKVylNweqP1pxqh8h+hWKw==
+  dependencies:
+    "@types/hammerjs" "^2.0.41"
+    hammerjs "^2.0.8"
 
 ms@2.1.2:
   version "2.1.2"
@@ -605,6 +945,13 @@ node-releases@^2.0.5:
   version "2.0.5"
   resolved "https://npm.yandex-team.ru/node-releases/-/node-releases-2.0.5.tgz?rbtorrent=16d013456e49f4db49e800ec6409f9688fd67ef3#280ed5bc3eba0d96ce44897d8aee478bfb3d9666"
   integrity sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q==
+
+pad-left@^2.1.0:
+  version "2.1.0"
+  resolved "https://npm.yandex-team.ru/pad-left/-/pad-left-2.1.0.tgz?rbtorrent=0e797b0933c1be0d68efb6a2c1f205e0a4015ad8#16e6a3b2d44a8e138cb0838cc7cb403a4fc9e994"
+  integrity sha1-FuajstRKjhOMsIOMx8tAOk/J6ZQ=
+  dependencies:
+    repeat-string "^1.5.4"
 
 path-parse@^1.0.7:
   version "1.0.7"
@@ -630,6 +977,16 @@ postcss@^8.4.13:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+probe.gl@^3.4.0:
+  version "3.5.0"
+  resolved "https://npm.yandex-team.ru/probe.gl/-/probe.gl-3.5.0.tgz?rbtorrent=2d138440a8bf77c72139844b16bbc9bac6cb7cc3#084c0ef3a233e1c055cd8a88efb67abb11eba483"
+  integrity sha512-KWj8u0PNytr/rVwcQFcN7O8SK7n/ITOsUZ91l4fSX95oHhKvVCI7eadrzFUzFRlXkFfBWpMWZXFHITsHHHUctw==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@probe.gl/env" "3.5.0"
+    "@probe.gl/log" "3.5.0"
+    "@probe.gl/stats" "3.5.0"
+
 react-dom@^18.0.0:
   version "18.2.0"
   resolved "https://npm.yandex-team.ru/react-dom/-/react-dom-18.2.0.tgz?rbtorrent=99009a6c6c794f60f8ebd8a8b2680f9ae1018f6f#22aaf38708db2674ed9ada224ca4aa708d821e3d"
@@ -649,6 +1006,21 @@ react@^18.0.0:
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
+
+reduce-flatten@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.yandex-team.ru/reduce-flatten/-/reduce-flatten-2.0.0.tgz?rbtorrent=f629d108fa51f8c73dfb265e1fba6e0ee1a7eae6#734fd84e65f375d7ca4465c69798c25c9d10ae27"
+  integrity sha512-EJ4UNY/U1t2P/2k6oqotuX2Cc3T6nxJwsM0N0asT7dhrtH1ltUxDn4NalSYmPE2rCkVpcf/X6R0wDwcFpzhd4w==
+
+regenerator-runtime@^0.13.4:
+  version "0.13.9"
+  resolved "https://npm.yandex-team.ru/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz?rbtorrent=6d4e913bfc0856e5678c856fc3a31361229a9e9c#8925742a98ffd90814988d7566ad30ca3b263b52"
+  integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
+
+repeat-string@^1.5.4:
+  version "1.6.1"
+  resolved "https://npm.yandex-team.ru/repeat-string/-/repeat-string-1.6.1.tgz?rbtorrent=891c68ffb57d010208222baabe570e54c5f25f24#8dcae470e1c88abc2d600fff4a776286da75e637"
+  integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
 
 resolve@^1.22.0:
   version "1.22.1"
@@ -700,15 +1072,45 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://npm.yandex-team.ru/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz?rbtorrent=33b0c2b22bc3c432c80f1a3f2943fb535652fc40#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+table-layout@^1.0.1:
+  version "1.0.2"
+  resolved "https://npm.yandex-team.ru/table-layout/-/table-layout-1.0.2.tgz?rbtorrent=ae6f500a8079f64b10a6f92ee80ee76c79764bf1#c4038a1853b0136d63365a734b6931cf4fad4a04"
+  integrity sha512-qd/R7n5rQTRFi+Zf2sk5XVVd9UQl6ZkduPFC3S7WEGJAmetDTjY3qPN50eSKzwuzEyQKy5TN2TiZdkIjos2L6A==
+  dependencies:
+    array-back "^4.0.1"
+    deep-extend "~0.6.0"
+    typical "^5.2.0"
+    wordwrapjs "^4.0.0"
+
+text-encoding-utf-8@^1.0.2:
+  version "1.0.2"
+  resolved "https://npm.yandex-team.ru/text-encoding-utf-8/-/text-encoding-utf-8-1.0.2.tgz?rbtorrent=8aa96ff07d5e4c9cde0ca6bd7b75ff0cbad171f1#585b62197b0ae437e3c7b5d0af27ac1021e10d13"
+  integrity sha512-8bw4MY9WjdsD2aMtO0OzOCY3pXGYNx2d2FfHRVUKkiCPDWjKuOlhLVASS+pD7VkLTVjW268LYJHwsnPFlBpbAg==
+
 to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://npm.yandex-team.ru/to-fast-properties/-/to-fast-properties-2.0.0.tgz?rbtorrent=9510e011a9a6b99a9b8eef87cd09723fcd8720b6#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
 
+tslib@^2.2.0:
+  version "2.4.0"
+  resolved "https://npm.yandex-team.ru/tslib/-/tslib-2.4.0.tgz?rbtorrent=4c48d32af27f39549b90b475be22deaeff211fb3#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+
 typescript@^4.6.3:
   version "4.7.4"
   resolved "https://npm.yandex-team.ru/typescript/-/typescript-4.7.4.tgz?rbtorrent=adbc86b4edc48718d11f2e499ff6d280f65dbf91#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
   integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
+
+typical@^4.0.0:
+  version "4.0.0"
+  resolved "https://npm.yandex-team.ru/typical/-/typical-4.0.0.tgz?rbtorrent=03c0800e2e543aaeff1c8fbac77bce2d8e03486a#cbeaff3b9d7ae1e2bbfaf5a4e6f11eccfde94fc4"
+  integrity sha512-VAH4IvQ7BDFYglMd7BPRDfLgxZZX4O4TFcRDA6EN5X7erNJJq+McIEp8np9aVtxrCJ6qx4GTYVfOWNjcqwZgRw==
+
+typical@^5.2.0:
+  version "5.2.0"
+  resolved "https://npm.yandex-team.ru/typical/-/typical-5.2.0.tgz?rbtorrent=f7e7daad638c2750c5750b24b3e91f5cbcf58adc#4daaac4f2b5315460804f0acf6cb69c52bb93066"
+  integrity sha512-dvdQgNDNJo+8B2uBQoqdb11eUCE1JQXhvjC/CZtgvZseVd5TYMXnq0+vuUemXbd/Se29cTaUuPX3YIc2xgbvIg==
 
 update-browserslist-db@^1.0.4:
   version "1.0.4"
@@ -729,3 +1131,11 @@ vite@^2.9.9:
     rollup "^2.59.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+wordwrapjs@^4.0.0:
+  version "4.0.1"
+  resolved "https://npm.yandex-team.ru/wordwrapjs/-/wordwrapjs-4.0.1.tgz?rbtorrent=9dbd46ecc944e46b9ac4cd92b6f3c2441f2837f6#d9790bccfb110a0fc7836b5ebce0937b37a8b98f"
+  integrity sha512-kKlNACbvHrkpIw6oPeYDSmdCTu2hdMHoyXLTcUKala++lx5Y+wjJ/e474Jqv5abnVmwxw08DiTuHmw69lJGksA==
+  dependencies:
+    reduce-flatten "^2.0.0"
+    typical "^5.2.0"

@@ -9,7 +9,11 @@
   },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "@deck.gl/core": "^8.8.2",
+    "@deck.gl/layers": "^8.8.2",
+    "@loaders.gl/core": "^3.0.0",
+    "@luma.gl/core": "^8.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
