@@ -6,5 +6,5 @@ https://boyur.github.io/yandex-map-deckgl/
 ## Start
 ```
 yarn
-yarn vite
+yarn dev
 ```
